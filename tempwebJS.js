@@ -75,5 +75,29 @@ function toggleConversionLength(conversionType) {
   }
 }
 
+// Weight Conversion
 
+function weightConverterKgtoG(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputgram").innerHTML = `${((valNum) * 1000).toFixed(2)} g` ;
+}
+
+function weightConverterGtoKg(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputkilogram").innerHTML = `${((valNum) / 1000).toFixed(2)} kg` ;
+}
+
+function toggleConversionWeight(conversionType) {
+  if (conversionType === 'gram') {
+    document.getElementById('gramDiv').style.display = 'block';
+    document.getElementById('kilogramDiv').style.display = 'none';
+    document.getElementById('inputkilogram').value = '';
+    document.getElementById("outputgram").innerHTML = '';
+  } else if (conversionType === 'kilogram') {
+    document.getElementById('gramDiv').style.display = 'none';
+    document.getElementById('kilogramDiv').style.display = 'block';
+    document.getElementById('inputgram').value = '';
+    document.getElementById("outputkilogram").innerHTML = '';
+  }
+}
 

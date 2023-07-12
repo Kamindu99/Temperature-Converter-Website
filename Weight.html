@@ -33,34 +33,35 @@
                 <h2 class="title mb-5">Weight Converter</h2>
     
                 <h2 >Please Select one</h2>
-            
+
                 <label class="containera">
-                    <input type="radio" checked="checked" name="radio" onclick="toggleConversion('celsius')">
-                    Fahrenheit to Celcius
-                </label>
-                <label class="containera" style="margin-left: 20px;">
-                    <input type="radio" name="radio" onclick="toggleConversion('fahrenheit')">
-                    Celcius to Fahrenheit
+                    <input type="radio" checked="checked" name="radio" onclick="toggleConversionWeight('kilogram')">
+                    Gram to Kilogram
                 </label>
             
-                <div id="celsiusDiv" class="mt-5">
-                    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+                <label class="containera"  style="margin-left: 20px;">
+                    <input type="radio" name="radio" onclick="toggleConversionWeight('gram')">
+                    Kilogram to Gram
+                </label>
+            
+                <div id="kilogramDiv" class="mt-5">
+                    <p>Type a value in the Gram field to convert the value to Kilogram:</p>
                     <p>
-                        <label>Fahrenheit</label>
-                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
-                            oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                        <label>Gram</label>
+                        <input id="inputgram" type="number" placeholder="Gram"
+                            oninput="weightConverterGtoKg(this.value)" onchange="weightConverterGtoKg(this.value)">
                     </p>
-                    <p>Celcius : <span id="outputCelcius"></span> </p>
+                    <p>Kilogram : <span id="outputkilogram"></span> </p>
                 </div>
             
-                <div id="fahrenheitDiv" class="mt-5" style="display: none;">
-                    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+                <div id="gramDiv" class="mt-5" style="display: none;">
+                    <p>Type a value in the Kilogram field to convert the value to Gram:</p>
                     <p>
-                        <label>Celsius</label>
-                        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCtoF(this.value)"
-                            onchange="temperatureConverterCtoF(this.value)">
+                        <label>Kilogram</label>
+                        <input id="inputkilogram" type="number" placeholder="Kilogram" oninput="weightConverterKgtoG(this.value)"
+                            onchange="weightConverterKgtoG(this.value)">
                     </p>
-                    <p>Fahrenheit : <span id="outputFahrenheit"></span></p>
+                    <p>Gram : <span id="outputgram"></span></p>
                 </div>
             </div>
           </div>
