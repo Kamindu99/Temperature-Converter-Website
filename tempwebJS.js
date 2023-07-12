@@ -12,10 +12,12 @@ function toggleConversion(conversionType) {
   if (conversionType === 'celsius') {
     document.getElementById('celsiusDiv').style.display = 'block';
     document.getElementById('fahrenheitDiv').style.display = 'none';
-    document.getElementById('inputFahrenheit').innerHTML='';
+    document.getElementById('inputFahrenheit').value = '';
+    document.getElementById("outputCelcius").innerHTML = '';
   } else if (conversionType === 'fahrenheit') {
     document.getElementById('celsiusDiv').style.display = 'none';
     document.getElementById('fahrenheitDiv').style.display = 'block';
-    document.getElementById('inputCelsius').innerHTML='';
+    document.getElementById('inputCelsius').value = '';
+    document.getElementById("outputFahrenheit").innerHTML = '';
   }
 }
