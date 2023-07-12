@@ -1,18 +1,60 @@
 body {
-  background: url(https://cdn.hswstatic.com/gif/celsius-convert.jpg);
-  font-size: 26px;
-  color: #000;
   margin: 0;
   padding: 0;
-  text-align: center;
+}
+
+.tempbodycss {
+  background: url(https://cdn.hswstatic.com/gif/celsius-convert.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.currbodycss {
+  background: url(https://newsradio.lk/wp-content/uploads/2023/05/Fed.US_.Dollar.USD_.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.lenbodycss {
+  background: url(https://st.depositphotos.com/1000352/4564/i/450/depositphotos_45647949-stock-photo-yellow-measuring-tape-isolated-on.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.webodycss {
+  background: url(https://media.istockphoto.com/id/1189570149/photo/3d-illustration-of-balance-scale-in-black-color-isolated-on-a-white-background.jpg?s=612x612&w=0&k=20&c=CGCr-p0ZIzvXFXCiThfRxBupoVqI9nur7LOOOCqcyHo=);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form-body{
+  text-align: center;
+  font-size: 26px;
+  color: #000;
+}
+
+.form-body .card{
+  background-color: #ffffff73;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px #000;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.navbarcss{
+  background-color: #eee;
+  padding: 10px;
+  font-size: large;
+}
+.nav-item .active {
+  background-color: #4CAF50;
+  color: white;
 }
 
 .title {
   font-size: 40px;
   font-weight: bold;
-  color: #ffffff;
+  color: #000000;
   margin-bottom: 10px;
   text-align: center;
  text-shadow: #000000 5px 5px 20px;
@@ -28,12 +70,12 @@ input[type="number"] {
   font-size: 20px;
 }
 
-.container {
+.containera {
   cursor: pointer;
   
 }
 
-.container input {
+.containera input {
   width: 15px;
   height: 15px;
 }

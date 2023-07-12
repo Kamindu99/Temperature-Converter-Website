@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/Vn9sIUPcCVihrxMATWR_MjCIFuc5quCw-R3UN8Rmoze7rgaBhHdmF2RqjX3x28EJoQ=w240-h480-rw" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body class="lenbodycss"> 
+ 
+
+    <ul class="nav justify-content-center navbarcss mb-5">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Temperature</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Currency.html">Currency</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="Length.html">Length</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Weight.html">Weight</a>
+        </li>
+      </ul>
+
+      <div class="form-body container">
+        <div class="card" >
+            <div class="card-body">
+                <h2 class="title mb-5">Length Converter</h2>
+    
+                <h2 >Please Select one</h2>
+            
+                <label class="containera">
+                    <input type="radio" checked="checked" name="radio" onclick="toggleConversion('celsius')">
+                    Fahrenheit to Celcius
+                </label>
+                <label class="containera" style="margin-left: 20px;">
+                    <input type="radio" name="radio" onclick="toggleConversion('fahrenheit')">
+                    Celcius to Fahrenheit
+                </label>
+            
+                <div id="celsiusDiv" class="mt-5">
+                    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+                    <p>
+                        <label>Fahrenheit</label>
+                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                            oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                    </p>
+                    <p>Celcius : <span id="outputCelcius"></span> </p>
+                </div>
+            
+                <div id="fahrenheitDiv" class="mt-5" style="display: none;">
+                    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+                    <p>
+                        <label>Celsius</label>
+                        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCtoF(this.value)"
+                            onchange="temperatureConverterCtoF(this.value)">
+                    </p>
+                    <p>Fahrenheit : <span id="outputFahrenheit"></span></p>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <script src="tempwebJS.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>
