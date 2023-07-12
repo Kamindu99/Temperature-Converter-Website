@@ -49,4 +49,31 @@ function toggleConversionCurr(conversionType) {
   }
 }
 
+// Length Conversion
+
+function lengthConverterMtoCm(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputcentimeter").innerHTML = `${((valNum) * 100).toFixed(2)} cm` ;
+}
+
+function lengthConverterCmtoM(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputmeter").innerHTML = `${((valNum) / 100).toFixed(2)} m` ;
+}
+
+function toggleConversionLength(conversionType) {
+  if (conversionType === 'meter') {
+    document.getElementById('meterDiv').style.display = 'block';
+    document.getElementById('centimeterDiv').style.display = 'none';
+    document.getElementById('inputcentimeter').value = '';
+    document.getElementById("outputmeter").innerHTML = '';
+  } else if (conversionType === 'centimeter') {
+    document.getElementById('meterDiv').style.display = 'none';
+    document.getElementById('centimeterDiv').style.display = 'block';
+    document.getElementById('inputmeter').value = '';
+    document.getElementById("outputcentimeter").innerHTML = '';
+  }
+}
+
+
 

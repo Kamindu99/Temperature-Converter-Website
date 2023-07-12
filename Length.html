@@ -33,34 +33,35 @@
                 <h2 class="title mb-5">Length Converter</h2>
     
                 <h2 >Please Select one</h2>
-            
+
                 <label class="containera">
-                    <input type="radio" checked="checked" name="radio" onclick="toggleConversion('celsius')">
-                    Fahrenheit to Celcius
-                </label>
-                <label class="containera" style="margin-left: 20px;">
-                    <input type="radio" name="radio" onclick="toggleConversion('fahrenheit')">
-                    Celcius to Fahrenheit
+                    <input type="radio" checked="checked" name="radio" onclick="toggleConversionLength('meter')">
+                    Centimeter to Meter
                 </label>
             
-                <div id="celsiusDiv" class="mt-5">
-                    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+                <label class="containera" style="margin-left: 20px;">
+                    <input type="radio"  name="radio" onclick="toggleConversionLength('centimeter')">
+                    Meter to Centimeter
+                </label>
+            
+                <div id="meterDiv" class="mt-5">
+                    <p>Type a value in the Centimeter field to convert the value to Meter:</p>
                     <p>
-                        <label>Fahrenheit</label>
-                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
-                            oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                        <label>Centimeter</label>
+                        <input id="inputcentimeter" type="number" placeholder="Centimeter"
+                            oninput="lengthConverterCmtoM(this.value)" onchange="lengthConverterCmtoM(this.value)">
                     </p>
-                    <p>Celcius : <span id="outputCelcius"></span> </p>
+                    <p>Meter : <span id="outputmeter"></span> </p>
                 </div>
             
-                <div id="fahrenheitDiv" class="mt-5" style="display: none;">
-                    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+                <div id="centimeterDiv" class="mt-5" style="display: none;">
+                    <p>Type a value in the Meter field to convert the value to Centimeter:</p>
                     <p>
-                        <label>Celsius</label>
-                        <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverterCtoF(this.value)"
-                            onchange="temperatureConverterCtoF(this.value)">
+                        <label>Meter</label>
+                        <input id="inputmeter" type="number" placeholder="Meter" oninput="lengthConverterMtoCm(this.value)"
+                            onchange="lengthConverterMtoCm(this.value)">
                     </p>
-                    <p>Fahrenheit : <span id="outputFahrenheit"></span></p>
+                    <p>Centimeter : <span id="outputcentimeter"></span></p>
                 </div>
             </div>
           </div>
