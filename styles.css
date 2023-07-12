@@ -1,33 +1,46 @@
-body{
-    background-color: #fff;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+body {
+  background: url(https://cdn.hswstatic.com/gif/celsius-convert.jpg);
+  font-size: 26px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.title{
-    font-size: 30px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
-    text-align: center;
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+  text-align: center;
+ text-shadow: #000000 5px 5px 20px;
+}
+
+input[type="number"] {
+  width: 300px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 10px;
+  font-size: 20px;
 }
 
 .container {
-    cursor: pointer;
-    font-size: 22px;
-  }
-  .container input {
-    width: 15px;
-    height: 15px;
-  }
+  cursor: pointer;
   
-  .checkmark {
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
+}
+
+.container input {
+  width: 15px;
+  height: 15px;
+}
+
+.checkmark {
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
