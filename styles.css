@@ -1,0 +1,33 @@
+body{
+    background-color: #fff;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    cursor: pointer;
+    font-size: 22px;
+  }
+  .container input {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .checkmark {
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  

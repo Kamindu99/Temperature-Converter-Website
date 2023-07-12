@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon"
+        href="https://play-lh.googleusercontent.com/Vn9sIUPcCVihrxMATWR_MjCIFuc5quCw-R3UN8Rmoze7rgaBhHdmF2RqjX3x28EJoQ=w240-h480-rw" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h2 class="title">Temperature Converter</h2>
+
+    <h2>Please Select one</h2>
+
+    <label class="container">
+        <input type="radio" checked="checked" name="radio" onclick="toggleConversion('celsius')">
+        C -> F
+    </label>
+    <label class="container">
+        <input type="radio" name="radio" onclick="toggleConversion('fahrenheit')">
+        F -> C
+    </label>
+    
+    <div id="celsiusDiv">
+        <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+           <p>
+               <label>Fahrenheit</label>
+               <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                   oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+           </p>
+           <p>Celcius: <span id="outputCelcius"></span></p>
+       </div>
+    
+    <div id="fahrenheitDiv" style="display: none;">
+        <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+        <p>
+            <label>Celsius</label>
+            <input id="inputCelsius" type="number" placeholder="Celsius"
+                oninput="temperatureConverterCtoF(this.value)" onchange="temperatureConverterCtoF(this.value)">
+        </p>
+        <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    </div>
+    
+
+    <script src="tempwebJS.js"></script>
+
+</body>
+
+</html>
